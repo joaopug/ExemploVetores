@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ExemploVetores {
     public static void main(String[] args) {
 
@@ -25,10 +27,18 @@ public class ExemploVetores {
         urna[8] = 9;
         urna[9] = 10;
 
-        for (int j : urna) {
+        String[] nomes = new String[10];
+
+        Scanner entrada = new Scanner(System.in);
+        nomes[0] = entrada.nextLine();
+
+        for (int i = 0; i < urna.length; i++) {
             System.out.println(j);
         }
 
+        for (int i = 0; i < nomes.length; i++) {
+            System.out.println();
+        }
         System.out.println((votopessoa1) + votopessoa2 + votopessoa3 + votopessoa4 + votopessoa5 + votopessoa6 + votopessoa7 + votopessoa8 + votopessoa9 + votopessoa10);
 
     }
